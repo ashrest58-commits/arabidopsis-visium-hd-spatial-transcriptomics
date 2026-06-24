@@ -1,0 +1,16 @@
+# ---- R-specific clutter ----
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# ---- OS-specific junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Raw downloaded data (re-downloadable via R_code/01_setup_and_load.R) ----
+data/
+*.tar.gz
+
+# ---- Large derived Seurat objects (re-generatable by re-running the scripts) ----
+*.rds
