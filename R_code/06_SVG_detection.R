@@ -47,6 +47,31 @@ svg_info["EXT3", ]
  EXT3        0.7907884               0             0
 #BH p-value adjustment was applied and confirmed that adjusted p-value is significant
 
+##According to TAIR, EXT3 is expressed in root, but XYP2 is also highly expressed in root nad 
+#has positive Moran’s I index and significant adjusted P value
+
+## Do the EXT3/AGP31 positive bins actually sit on your "Root" cluster,
+# or somewhere else in the tissue?
+root_cells <- WhichCells(obj, idents = "Root")
+
+counts <- GetAssayData(obj, assay = "Spatial.008um", layer = "counts")
+for (g in c("EXT3", "AGP31", "XYP2")) {
+  pos_cells <- colnames(counts)[counts[g, ] > 0]
+  overlap <- length(intersect(pos_cells, root_cells))
+  cat(g, ": ", length(pos_cells), " positive bins total, ",
+      overlap, " of them (", round(100*overlap/length(pos_cells), 1),
+      "%) fall within the Root cluster\n", sep = "")
+} 
+
+#EXT3: 255 positive bins total, 119 of them (46.7%) fall within the Root cluster
+AGP31: 332 positive bins total, 52 of them (15.7%) fall within the Root cluster
+XYP2: 41 positive bins total, 34 of them (82.9%) fall within the Root cluster
+
+
+#even though EXT3 has highest positive bins, only 46% fall in root cluster whereas 83% of XYP2 
+#fall in root cluster so will go with XYP2 as representative
+
+
 ## ---- 2. Overlap between top SVGs and cluster markers ---------------
 markers <- read.csv(file.path(results_dir, "cluster_markers.csv"), row.names = 1)
 svg_also_markers <- intersect(top_svg, markers$gene)
