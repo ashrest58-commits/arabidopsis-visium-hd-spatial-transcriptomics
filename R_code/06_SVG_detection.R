@@ -28,7 +28,7 @@ svg_info$MoransI_p.adj <- p.adjust(svg_info$MoransI_p.value, method = "BH")
 sum(!is.na(svg_info$MoransI_p.value))
 #20
 #FindSpatiallyVariableFeatures silently failed to compute Moran's I for all but 20 of the 
-#3000 requested genes - a reproducible behavior matching documented Seurat bug reportson 
+#3000 requested genes - a reproducible behavior consistent with documented Seurat bug reports on 
 #high-resolution spatial data (issue#9087 and discussion#9608 - and we report results for 
 #the 20 genes it actually computed
 # Add gene names as a column, sort by adjusted P-value (most significant SVGs first)
