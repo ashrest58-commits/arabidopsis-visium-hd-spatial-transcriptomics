@@ -25,43 +25,6 @@ obj <- FindSpatiallyVariableFeatures(obj,
 svg_info <- SVFInfo(obj, method = "moransi")
 svg_info$MoransI_p.adj <- p.adjust(svg_info$MoransI_p.value, method = "BH")
 
-sum(!is.na(svg_info$MoransI_p.value))
-#20
-#FindSpatiallyVariableFeatures silently failed to compute Moran's I for all but 20 of the 
-#3000 requested genes - a reproducible behavior consistent with documented Seurat bug reports on 
-#high-resolution spatial data (issue#9087 and discussion#9608 - 
-
-### ---- Clean-coordinate diagnostic ------------------------------------
-coords <- GetTissueCoordinates(obj)
-str(coords)
-#'data.frame':   1516 obs. of  3 variables:
- $ x   : num  5179 4918 6898 4918 10491 ...
- $ y   : num  8635 8428 15048 8486 15054 ...
- $ cell: chr  "s_008um_00456_00333-1" "s_008um_00463_00324-1" "s_008um_00237_00394-1" "s_008um_00461_00324-1" ...
-
-spatial_loc <- as.matrix(coords[, c("x", "y")])
-rownames(spatial_loc) <- coords$cell
-
-## Sanity check: rownames must exactly match the assay's cell order.
-stopifnot(all(rownames(spatial_loc) == Cells(obj)))
-cat("Coordinate/cell alignment check passed.\n")
-#check passed
-
-assay_obj <- obj[["Spatial.008um"]]
-assay_obj <- FindSpatiallyVariableFeatures(
-  assay_obj,
-  spatial.location = spatial_loc,
-  selection.method = "moransi",
-  features = VariableFeatures(obj),
-  nfeatures = length(VariableFeatures(obj))
-)
-
-svg_info_clean <- SVFInfo(assay_obj, method = "moransi")
-sum(!is.na(svg_info_clean$MoransI_p.value))
-#20
-
-# we report results for 
-#the 20 genes it actually computed
 # Add gene names as a column, sort by adjusted P-value (most significant SVGs first)
 svg_info$gene <- rownames(svg_info)
 svg_info <- svg_info[order(svg_info$MoransI_p.adj), 
