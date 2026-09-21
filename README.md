@@ -161,7 +161,7 @@ Separates the slide's multiple physically distinct tissue pieces using k-means o
 |---|---|
 | `cluster_markers.csv` | Full positive marker table from `FindAllMarkers` |
 | `top50_markers_per_cluster.csv` | Top 50 markers per cluster, used for annotation |
-| `spatially_variable_genes.csv` | Moran's I statistics, all tested genes |
+| `top20_SVG_MoransI.1` | Moran's I statistics, top 20 tested genes, excel file with all genes couldn't be uploaded due to large size |
 | `SVG_and_cluster_markers.csv` | Overlap between top SVGs and cluster markers |
 | `DE_<clusterA>_vs_<clusterB>.csv` (×8) | Pairwise DE results |
 | `ORA_compareCluster_all.csv` | Simplified GO BP ORA results, all clusters |
