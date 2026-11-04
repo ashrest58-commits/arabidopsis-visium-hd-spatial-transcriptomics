@@ -203,31 +203,37 @@ Beginner-friendly Seurat workflow for 10x Visium HD spatial transcriptomics anal
 ---
 
 ## Citation
+If you use this workflow, please cite:
+Nepal S, Shrestha A, Wasti A, Dawadi P, Roy M, Koirala P, Islam MT, Emu NJ, Bristy SA, Bynum KG, Nighswander N, Singh AP, Miura S, Niraula D and Pokharel B (2026) Thinking spatially: a conceptual roadmap for designing spatial transcriptomics studies. Front. Genet. 17:1958622. doi: 10.3389/fgene.2026.1958622
 
-10x Genomics. (2025). Visium HD 3' Spatial Gene Expression — *Arabidopsis thaliana* seedling [dataset]. https://www.10xgenomics.com/datasets/visium-hd-three-prime-arabidopsis
+---
 
-10x Genomics. Visium HD 3' Tested Tissue List.
-Satija Lab. (2025). Visium HD analysis vignette. https://satijalab.org/seurat/articles/visiumhd_commands_intro
-Satija Lab. Spatial transcriptomics vignette (archive v3.2). https://satijalab.org/seurat/archive/v3.2/spatial_vignette.html
+## References
+
+- 10x Genomics. (2025). Visium HD 3' Spatial Gene Expression — *Arabidopsis thaliana* seedling [dataset]. https://www.10xgenomics.com/datasets/visium-hd-three-prime-arabidopsis
+
+- 10x Genomics. Visium HD 3' Tested Tissue List.
+- Satija Lab. (2025). Visium HD analysis vignette. https://satijalab.org/seurat/articles/visiumhd_commands_intro
+- Satija Lab. Spatial transcriptomics vignette (archive v3.2). https://satijalab.org/seurat/archive/v3.2/spatial_vignette.html
 The Arabidopsis Information Resource (TAIR) — Klepikova expression atlas.
-Kim, H.-Y. (2014). Statistical notes for clinical researchers: Nonparametric statistical methods 1 — Nonparametric methods for comparing two groups.
-Kim, H.-Y. (2014). Statistical notes for clinical researchers: Nonparametric statistical methods 2 — Nonparametric methods for the Wilcoxon rank-sum test.
-Yates, J., et al. (2025). Filtering cells with high mitochondrial content depletes viable metabolically altered malignant cell populations in cancer single-cell studies. PMC11983838.
-Topping, J. F., et al. (1997). Promoter trap markers differentiate structural and positional components of polar development in Arabidopsis. PMC157016.
-Subramanian, A., et al. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.
-Reimand, J., et al. (2019). Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap.
-Wijesooriya, K., et al. (2022). Urgent need for consistent standards in functional enrichment analysis.
-Wu, T., et al. (2021). clusterProfiler 4.0: A universal enrichment tool for interpreting omics data.
-Jafari, M., & Ansari-Pour, N. (2019). Why, when and how to adjust your p values?
-Chicco, D., & Agapito, G. (2022). Nine quick tips for pathway enrichment analysis.
-Yu, G. (2024). clusterProfiler documentation / methods notes.
-Zhou, et al. (2024). Spatial transcriptomics reveals unique metabolic profile and key oncogenic regulators of cervical squamous cell carcinoma.
-de Oliveira, et al. (2026). Benchmarking multiple gene ontology enrichment tools reveals high biological significance, ranking, and stringency heterogeneity among datasets.
-Xu, et al. (2024). Using clusterProfiler to characterize multiomics data.
-Sagendorf, T. (2022). Over-Representation Analysis.
-Matsuoka, et al. (2025). Single-cell and spatial transcriptomic characterization of pulmonary pleomorphic carcinoma.
-Tokura, et al. (2026). Spatial Transcriptomics and Bulk RNA-Seq Analysis Revealed Molecular Classification of Invasive Lobular Carcinoma.
-Zuo, et al. (2025). Spatial transcriptomic analysis of tumor microenvironment in esophageal squamous cell carcinoma with HIV infection.
-Chen, et al. (2023). [clusterProfiler/ORA/GSEA application and methods reference — complete citation pending.]
-ESRI. How Spatial Autocorrelation (Global Moran's I) works. https://doc.esri.com/en/arcgis-pro/latest/tool-reference/spatial-statistics/h-how-spatial-autocorrelation-moran-s-i-spatial-st.html
-StatisticsHowTo. Moran's I: Definition, Examples. https://www.statisticshowto.com/morans-i/
+- Kim, H.-Y. (2014). Statistical notes for clinical researchers: Nonparametric statistical methods 1 — Nonparametric methods for comparing two groups.
+- Kim, H.-Y. (2014). Statistical notes for clinical researchers: Nonparametric statistical methods 2 — Nonparametric methods for the Wilcoxon rank-sum test.
+- Yates, J., et al. (2025). Filtering cells with high mitochondrial content depletes viable metabolically altered malignant cell populations in cancer single-cell studies. PMC11983838.
+- Topping, J. F., et al. (1997). Promoter trap markers differentiate structural and positional components of polar development in Arabidopsis. PMC157016.
+- Subramanian, A., et al. (2005). Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles.
+- Reimand, J., et al. (2019). Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap.
+- Wijesooriya, K., et al. (2022). Urgent need for consistent standards in functional enrichment analysis.
+- Wu, T., et al. (2021). clusterProfiler 4.0: A universal enrichment tool for interpreting omics data.
+- Jafari, M., & Ansari-Pour, N. (2019). Why, when and how to adjust your p values?
+- Chicco, D., & Agapito, G. (2022). Nine quick tips for pathway enrichment analysis.
+- Yu, G. (2024). clusterProfiler documentation / methods notes.
+- Zhou, et al. (2024). Spatial transcriptomics reveals unique metabolic profile and key oncogenic regulators of cervical squamous cell carcinoma.
+- de Oliveira, et al. (2026). Benchmarking multiple gene ontology enrichment tools reveals high biological significance, ranking, and stringency heterogeneity among datasets.
+- Xu, et al. (2024). Using clusterProfiler to characterize multiomics data.
+- Sagendorf, T. (2022). Over-Representation Analysis.
+- Matsuoka, et al. (2025). Single-cell and spatial transcriptomic characterization of pulmonary pleomorphic carcinoma.
+- Tokura, et al. (2026). Spatial Transcriptomics and Bulk RNA-Seq Analysis Revealed Molecular Classification of Invasive Lobular Carcinoma.
+- Zuo, et al. (2025). Spatial transcriptomic analysis of tumor microenvironment in esophageal squamous cell carcinoma with HIV infection.
+- Chen, et al. (2023). [clusterProfiler/ORA/GSEA application and methods reference — complete citation pending.]
+- ESRI. How Spatial Autocorrelation (Global Moran's I) works. https://doc.esri.com/en/arcgis-pro/latest/tool-reference/spatial-statistics/h-how-spatial-autocorrelation-moran-s-i-spatial-st.html
+- StatisticsHowTo. Moran's I: Definition, Examples. https://www.statisticshowto.com/morans-i/
