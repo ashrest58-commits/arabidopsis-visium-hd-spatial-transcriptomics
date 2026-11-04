@@ -204,6 +204,7 @@ Beginner-friendly Seurat workflow for 10x Visium HD spatial transcriptomics anal
 
 ## Citation
 If you use this workflow, please cite:
+
 Nepal S, Shrestha A, Wasti A, Dawadi P, Roy M, Koirala P, Islam MT, Emu NJ, Bristy SA, Bynum KG, Nighswander N, Singh AP, Miura S, Niraula D and Pokharel B (2026) Thinking spatially: a conceptual roadmap for designing spatial transcriptomics studies. Front. Genet. 17:1958622. doi: 10.3389/fgene.2026.1958622
 
 ---
